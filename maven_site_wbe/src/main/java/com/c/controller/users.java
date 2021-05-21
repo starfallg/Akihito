@@ -25,6 +25,7 @@ public class users {
             System.out.println(users);
             int arr[]={8,4,6,2,3};
             int tem=0;
+            System.out.println("牛牛乓臭");
             for (int i=0;i<arr.length;i++){
                 for (int j=0;j<arr.length;j++){
                     if(arr[j]>arr[i]){
