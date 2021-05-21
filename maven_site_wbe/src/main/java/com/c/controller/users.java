@@ -23,6 +23,20 @@ public class users {
         try {
             List<com.c.entity.users> users = dao.queryall();
             System.out.println(users);
+            int arr[]={8,4,6,2,3};
+            int tem=0;
+            for (int i=0;i<arr.length;i++){
+                for (int j=0;j<arr.length;j++){
+                    if(arr[j]>arr[i]){
+                        tem=arr[i];
+                        arr[i]=arr[j];
+                        arr[j]=tem;
+                    }
+                }
+            }
+            for (int i : arr) {
+                System.out.println(i);
+            }
         }catch (Exception e){
             return "no";
         }
